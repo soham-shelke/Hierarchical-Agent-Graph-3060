@@ -1,6 +1,8 @@
-# Hierarchical-Agent-Graph-3060
-Research code for optimizing Hierarchical LLM Agents on consumer hardware (RTX 3060). Achieved 41% latency reduction using Graph-Based State Management.
 # Resource-Efficient Hierarchical Multi-Agent Workflows
+
+![Status](https://img.shields.io/badge/Status-Research_Prototype-blue)
+![Hardware](https://img.shields.io/badge/Hardware-RTX_3060_(6GB)-green)
+![Models](https://img.shields.io/badge/Models-Llama_3.2-orange)
 
 > **Research implementation for the paper: "Resource-Efficient Hierarchical Multi-Agent Workflows via Graph-Based State Management on Consumer Hardware"**
 
@@ -40,7 +42,6 @@ The system consists of two quantized agents running locally via Ollama:
 2.  **Python 3.8+**
 
 ### Setup
-```bash
 # Clone the repository
 git clone [https://github.com/YourUsername/Hierarchical-Agent-Graph-3060.git](https://github.com/YourUsername/Hierarchical-Agent-Graph-3060.git)
 cd Hierarchical-Agent-Graph-3060
@@ -51,3 +52,24 @@ pip install requests
 # Pull the required quantized models
 ollama pull llama3.2
 ollama pull llama3.2:1b
+Running the Experiment
+To reproduce the results from the paper, run the comparison script:
+
+Bash
+
+python experiment.py
+This will run both the Baseline and Proposed workflows and output a comparison table to the console.
+
+📚 References
+This work builds upon the following foundational research:
+
+AGENTiGraph: Zhao, X. et al. (2025). AGENTiGraph: A Multi-Agent Knowledge Graph Framework for Interactive, Domain-Specific LLM Chatbots. CIKM 2025.
+
+Zero-Shot Reasoners: Kojima, T. et al. (2022). Large Language Models are Zero-Shot Reasoners. NeurIPS 2022.
+
+👤 Author
+Soham Shelke
+soham3105@gmail.com
+Department of Computer Engineering, Savitribai Phule Pune University (SPPU)
+
+Contact: soham3105@gmail.com
